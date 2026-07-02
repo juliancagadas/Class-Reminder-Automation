@@ -13,10 +13,7 @@
           Filter (Today's Schedule Only)
                            │
                            ▼
-          Code (Compute Time Difference)
-                           │
-                           ▼
-             IF (difference == 30?)
+             IF (warning == daytime)
                    /             \
               TRUE               FALSE
                 │                  │
