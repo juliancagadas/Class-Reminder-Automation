@@ -1,10 +1,7 @@
 # Class-Reminder-Automation
 - Export json file in Docker
 
-                    EVERY 1 MINUTE
-                           │
-                           ▼
-                 Schedule Trigger
+                 Schedule Trigger (Set to every 1 minute checking)
                            │
                            ▼
                Google Sheets (Get Rows)
