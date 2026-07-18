@@ -1,20 +1,35 @@
-# Class-Reminder-Automation
-- Export json file in Docker
+# Class-Reminder-Automation Flow
 
-                 Schedule Trigger (Set to every 1 minute checking)
-                           │
-                           ▼
-               Google Sheets (Get Rows)
-                           │
-                           ▼
-          Filter (Today's Schedule Only)
-                           │
-                           ▼
-             IF (warning == daytime)
-                   /             \
-              TRUE               FALSE
-                │                  │
-                ▼                  ▼
-        Send Telegram         End Workflow
-
+Schedule Trigger
+      │
+      ▼
+Read Google Sheets
+      │
+      ▼
+Filter Today's Schedule
+      │
+      ▼
+Check Time (IF)
+      │
+      ├────────────── No
+      │               │
+      │               ▼
+      │          End Workflow
+      │
+      ▼ Yes
+Fetch Current Weather
+(Open-Meteo API)
+      │
+      ▼
+Merge Schedule + Weather
+      │
+      ▼
+Convert Weather Code
+(JavaScript)
+      │
+      ▼
+Format Telegram Message
+      │
+      ▼
+Send Telegram Notification
 
