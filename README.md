@@ -1,35 +1,31 @@
-# Class-Reminder-Automation Flow
-
 Schedule Trigger
       │
       ▼
-Read Google Sheets
+Retrieve Today's Schedule
+(Google Sheets)
       │
       ▼
-Filter Today's Schedule
+Filter Today's Classes
       │
       ▼
-Check Time (IF)
+Check Reminder Time
       │
-      ├────────────── No
-      │               │
-      │               ▼
-      │          End Workflow
+      ├────────── No ──────────► End Workflow
       │
       ▼ Yes
 Fetch Current Weather
 (Open-Meteo API)
       │
       ▼
-Merge Schedule + Weather
+Merge Schedule & Weather Data
       │
       ▼
 Convert Weather Code
-(JavaScript)
+to Readable Description
       │
       ▼
-Format Telegram Message
+Generate Reminder Message
       │
       ▼
-Send Telegram Notification
-
+Send Notification
+via Telegram Bot
