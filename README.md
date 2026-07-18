@@ -2,7 +2,7 @@
   <img src="Asset/class-reminder-banner.png" alt="Class Reminder with Weather Checker" width="100%">
 </p>
 
-## Workflow
+## Workflow Flowchart
 
 ```text
 Schedule Trigger
