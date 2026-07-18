@@ -33,6 +33,9 @@ Generate Reminder Message
       ▼
 Send Notification via Telegram Bot
 ```
+
+## Workflow Documentation
+
 1. Trigger the workflow automatically.
 2. Retrieve today's schedule from Google Sheets.
 3. Filter today's class schedule.
